@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #000814;
+    color: #fca311;
+}
+
+
+h1{font-size: 4em;}
+h2{font-size: 3em;}
+h3{font-size: 1.5em;}
+li{font-size: 1.2em;}
+
+
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+header{
+    background-color: #001d3d;
+}
+
+footer h2{
+    font-size: 2em;
+}
+
+header .intro{
+    margin: 0;
+    padding: 25px 25px;
+    font-weight: bold;
+    color: #c6ac8f;
+    font-size: 1.7em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a{
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+    border: solid 2px aliceblue;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+header a:hover{
+    
+    background-color: #f1f1f8;
+    color: #001d3d;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    height: 80vh;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.7)) /* Capa de degradado para mejorar la legibilidad */
+    ,url(img/hero.jpg);
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta la imagen al tamaño del contenedor */
+    background-position: center center; /* Centra la imagen en el contenedor */
+}
+
+#acerca-de-mi{
+     background-color: #3e5c76;
+    color: #c6ac8f;
+}
+
+#acerca-de-mi .container{
+    text-align: center;
+    padding: 150px 0px; 
+}
+
+#acerca-de-mi p{
+    font-size: 2em;
+}
+#acerca-de-mi h2{
+    font-size: 3.5em;
+    color: #0a0908;
+    
+}
+
+
+#estudios{
+    background-color: #14213d;
+}
+#estudios h2{
+    font-size: 3.5em;
+    color: #eae0d5;
+}
+#estudios .container{
+    text-align: center;
+    padding: 150px 0px;
+}
+#estudios .carta{
+    color: #001d3d;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+#estudios .carta p{
+    font-size: 1.5em;
+    line-height: 1.5;
+}
+
+.carta:first-child{
+    background-color: #0988a1;
+    color: #001d3d;
+    
+}
+#estudios .carta:nth-child(2){
+    background-color: #0a9396;
+    color: #001d3d;
+}
+#estudios .carta:nth-child(3){
+    background-color: #94d2bd;
+    color: #001d3d;
+}
+#estudios .carta:nth-child(4){
+    background-color: #e9d8a6;
+    color: #001d3d;
+}
+.carta:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+#futuro{
+    background-color: #c6ac8f;
+    color: #001d3d;
+}
+#futuro .container{
+    text-align: center;
+    padding: 150px 0px;
+}
+#futuro ul{
+    list-style-type: none;
+    
+}
+#futuro li{
+    margin: 20px 0px;
+    font-size: 2em;
+}
+
+footer{
+    background-color: #45454662;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+@media (min-width: 760px) {
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    header a{
+        margin: 0 10px;
+    }
+    #acerca-de-mi .container{
+        display: flex;
+        justify-content: center;
+        
+    }
+    #acerca-de-mi .texto{
+        width: 50%;
+        text-align: initial;
+        padding: 0 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #acerca-de-mi .img-container{
+        background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.7)) /* Capa de degradado para mejorar la legibilidad */
+        ,url(img/foto\ chatgpt.png);
+        background-size: cover;
+        background-position: center center; /* Centra la imagen en el contenedor */
+        width: 500px;
+        height: 500px;
+        border-radius: 25px;
+
+    }
+    #estudios .programas{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    
+    #futuro .container{
+        text-align: initial;
+    }
+    #futuro  h2{
+        text-align: center;
+        margin: auto;
+        padding: 30px;
+        font-size: 5em;
+       
+    }
+    #futuro ul{
+        padding-left: 0px;
+    }
+    
+
+
+
+}
