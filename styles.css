@@ -261,19 +261,25 @@ footer{
   }
 }
   
-.intro{
-  animation: flip-animation 6s linear infinite; /* Ajusta la duración y el tipo de animación */
+.intro {
+  animation: heartbeat 1.5s infinite; /* Aplica la animación "heartbeat" con duración de 1 segundo e infinito */
 }
 
-@keyframes flip-animation {
+@keyframes heartbeat {
   0% {
-    transform: rotateY(0deg);
+    transform: scale(1); /* Tamaño original */
+  }
+  25% {
+    transform: scale(1.1); /* Aumenta un poco */
   }
   50% {
-    transform: rotateY(180deg);
+    transform: scale(1); /* Regresa al tamaño original */
+  }
+  75% {
+    transform: scale(0.9); /* Disminuye un poco */
   }
   100% {
-    transform: rotateY(360deg);
+    transform: scale(1); /* Regresa al tamaño original */
   }
 }
 
